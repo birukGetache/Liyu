@@ -33,7 +33,7 @@ const CarPartsForm = ({ showForm }) => {
     <div className="popup-overlay">
       <div className="popup-form">
         <h2 style={{paddingLeft:"10px" , paddingRight:"10px" , display:"flex" , justifyContent:"space-between"}}> <span style={{fontFamily:"cursive"}}>Car Spare Parts Form</span><span onClick={() => showForm(false)} >&times;</span></h2> 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} style={{zIndex:"1000"}}>
           <label>
             Make:
             <select value={make} onChange={(e) => setMake(e.target.value)}>
