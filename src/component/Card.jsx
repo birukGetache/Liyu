@@ -6,7 +6,7 @@ import data from '../data.json';
 import { useSelector,useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import { FaTelegram, FaTiktok, FaYoutube, FaFacebook, FaInstagram, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaTelegram, FaTiktok, FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Container = styled.div`
   display: grid;
@@ -61,6 +61,7 @@ const Cards = ({ searchQuery }) => {
     const handlePhoneClick = () => {
       window.location.href = 'tel:0911235261';
     };
+    const emailAddress = "binimelisse@gmail.com";
   
     const handleLocationClick = () => {
       window.open('https://www.google.com/maps?q=9.011704301013898,38.754134401379275', '_blank');
@@ -89,12 +90,13 @@ const Cards = ({ searchQuery }) => {
         }
       </Container>
       <IconsContainer>
-      <FaTelegram style={IconStyle} />
+      <FaPhone style={{ ...IconStyle, color: '#004358' }} onClick={handlePhoneClick} />
       <FaTiktok style={IconStyle}  onClick={handleTikTokClick}/>
-      <FaYoutube style={IconStyle} />
+      <div>    <a href={`mailto:${emailAddress}`} style={{textDecoration:"none"}} ><FaEnvelope style={{ ...IconStyle, color: '#004358' }} /></a></div>
       <FaFacebook style={IconStyle} />
       <FaInstagram style={IconStyle} />
-      <FaPhone style={{ ...IconStyle, color: '#004358' }} onClick={handlePhoneClick} />
+      <FaTelegram style={IconStyle} />
+     
       <FaMapMarkerAlt style={{ ...IconStyle, color: '#004358' }} onClick={handleLocationClick} />
     </IconsContainer>
       <Hr />
