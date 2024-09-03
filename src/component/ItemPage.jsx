@@ -105,7 +105,7 @@ const ItemPage = () => {
   const items = useSelector(state => state.items.item);
   const { name } = useParams();
   const handlePhoneClick = () => {
-    window.location.href = 'tel:0910862323';
+    window.location.href = 'tel:0911235261';
   };
 
   const handleTikTokClick = () => {
@@ -115,7 +115,7 @@ const ItemPage = () => {
       window.open('https://www.tiktok.com/@shebelemenssuit?_t=8pNzMPaADGX&_r=1', '_blank'); // Fallback to website
   //  }, 1000); // Delay fallback to allow app launch
   };
-  const emailAddress = "hulugeneralcommission@gmail.com";
+  const emailAddress = "binimelisse@gmail.com";
   <a href={`mailto:${emailAddress}`} style={{ textDecoration: 'none', color: "#117BF6" }}>
   <p style={{ padding: "0", margin: "0", display: "inline" }}>{emailAddress}</p>
 </a>

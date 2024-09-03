@@ -59,7 +59,7 @@ const handleTikTokClick = () => {
 const Cards = ({ searchQuery }) => {
   
     const handlePhoneClick = () => {
-      window.location.href = 'tel:0910862323';
+      window.location.href = 'tel:0911235261';
     };
   
     const handleLocationClick = () => {
