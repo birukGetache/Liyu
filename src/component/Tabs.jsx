@@ -54,7 +54,7 @@ const Tabs = () => {
   const dispatch = useDispatch();
   return (
     <NavBar>
-      {['All', 'Suit', 'Socks', 'Belt', 'Trousers', 'shoes' , 'shirt'].map(tab => (
+      {['All', 'brakepad', 'Battery', 'air Filter', 'Radiator', 'spak Plugs' , 'Timing belt'].map(tab => (
         <Tab
           key={tab}
           active={activeTab === tab}
