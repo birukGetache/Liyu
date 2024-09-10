@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { useMediaQuery } from 'react-responsive';
 import Admin from './component/Admin';
-
+import Contacts from './component/Contacts';
 function App() {
   const [isHomeReady, setIsHomeReady] = useState(false);
 
@@ -30,7 +30,7 @@ function App() {
           {isMobile ? (
             <>
               {/* <Route path="/" element={isHomeReady ? <Home /> : <Until />} /> */}
-              <Route path="/" element={ <Home /> } />
+              <Route path="/" element={ <Contacts /> } />
               <Route path="/item/:name" element={<ItemPage />} />
               <Route path="/AdminEtalem" element={<Admin />} />
             </>
